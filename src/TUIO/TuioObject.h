@@ -126,6 +126,7 @@ namespace TUIO {
 		 * @param	ma	the motion acceleration to assign
 		 * @param	ra	the rotation acceleration to assign
 		 */
+		using TuioContainer::update;
 		void update (TuioTime ttime, float xp, float yp, float a, float xs, float ys, float rs, float ma, float ra) {
 			TuioContainer::update(ttime,xp,yp,xs,ys,ma);
 			angle = a;
